@@ -8,21 +8,23 @@ Our "client" Horiseon is a fictional marketing agency who has requested to have 
 
 WHAT I DID
 
-To help with accessibility, I first looked at the index.html file, which I quickly noticed had a lot of redundant text. Inside the <body> it seemed like everything was a <div>. You can reference the original/source code in a docuement I renamed SOURCE-index.html. I cleaned up the <head> and added a proper <title> which tells the user where they are, the "Home [page] - Horiseon" visable in the browser tab.
+To help with accessibility, I first looked at the index.html file, which I quickly noticed had a lot of redundant text. Inside the body it seemed like everything was a div. The original/source code can be referenced in a docuement I renamed SOURCE-index.html. 
 
-Within newly named <header> section, I noticed a <span> element within the <h1> element, which I removed ( .seo {} was also removed from the CSS). I have yet to discuss with the client what their intent was, but my concern was that any screen readers trying to introduce the <h1> element to their reader/user may get caught up within the styling of the word. However, if the client prefers I can revert it to the previous style using the span element to seperate out SEO from HoriSEOn.
+I cleaned up the <head> and added a proper title which tells the user where they are, the "Home [page] - Horiseon" visable in the browser tab.
+
+Within newly named header section, I noticed a span element within the <h1> element, which I removed ( .seo {} was also removed from the CSS). I have yet to discuss with the client what their intent was, but my concern was that any screen readers trying to introduce the h1 element to their reader/user may get caught up within the styling of the word. However, if the client prefers I can revert it to the previous style using the span element to seperate out SEO from HoriSEOn.
   
-To help with readability of the index.html file, I added <!-- Comments --> to delineate sections and their purpose within the document.
+To help with readability of the index.html file, I added Comments to delineate sections and their purpose within the document.
 
-I added <nav> elements which seemed a better description for screen readers and backend web users than simply <div> within the <header> section.
+I added <nav> elements which seemed a better description for screen readers and backend web users than simply div within the <header> section.
   
 Header elements were renamed within the CSS document. Since there were no class attributes for header, we did not need .header {}. Subsequent .header {} styles were renamed to header {}. 
 
-<div class="hero"> was renamed <section class="hero"> and moved to its own line.
+div class="hero" was renamed section class="hero" and moved to its own line.
   
-After the header and hero section, the mockup had two clear columnns -- previously named <div class="content"> and <div class="benefits">; these were changed to <section class="conetnt"> and <section class="benefits"> for improved html semantics.
+After the header and hero section, the mockup had two clear columnns -- previously named div class="content" and div class="benefits"; these were changed to section class="conetnt" and <section class="benefits" for improved html semantics.
  
-I tested all the <nav> <a> links and not all of them worked, so I changed <div class="search-engine-optimization" to <div id="search-engine-optimization"> activating the hyperlink <a href="#search-engine-optimization"> Search Engine Optimization </a> within the <nav> section of the <header>.
+I tested all the <nav> <a> links and not all of them worked, so I changed div class="search-engine-optimization" to div id="search-engine-optimization" activating the hyperlink a href="#search-engine-optimization" Search Engine Optimization /a within the <nav> section of the header.
 
 
 
