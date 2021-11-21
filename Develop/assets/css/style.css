@@ -88,7 +88,7 @@ header nav ul li p {
     margin-left: 25px;
 }
 
-.content-boxes {
+.content {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -101,7 +101,7 @@ img {
     max-height: 200px;
 }
 
-.search-engine-optimization {
+/*.search-engine-optimization {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -126,7 +126,7 @@ img {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
-}
+}*/
 
 .search-engine-optimization h2 {
     margin-bottom: 20px;
