@@ -3,15 +3,21 @@
 ## Table of Contents
 
 * [Description](#Description)
+* [What I Did](#What-I-Did) 
+* [My Approach](#My-Approach) 
+* [Implementation](#Implementation)
 
-* [What I Did](#What-I-Did) * [My Approach](#My-Approach) * [Implementation](#Implementation)
+* [Lessons Learned](#Lessons-Learned) 
+* [Problems Solved](#Problems-Solved) 
+* [Code Improvement and Performance](#Code-Improvement-and-Performance) 
 
-* [Lessons Learned](#Lessons-Learned) * [Problems Solved](#Problems-Solved) * [Code Improvement and Performance](#Code-Improvement-and-Performance) 
-
-* [Installation](#Installation) * [Usage](#Usage)
-
+* [Installation](#Installation) 
+* [Usage](#Usage)
 * [Credits](#Credits)
-* [Articles from the Internet](#Articles-from-the-Internet) * [Accessibility Tools](#Accessibility-Tools)
+
+* [Articles from the Internet](#Articles-from-the-Internet) 
+* [Accessibility Tools](#Accessibility-Tools)
+
 * [License](#License)
 
 ### Description
