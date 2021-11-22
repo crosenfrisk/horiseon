@@ -3,17 +3,15 @@
 ## Table of Contents
 
 * [Description](#Description)
-* [What I Did](#What-I-Did)
-* [My Approach](#My-Approach)
-* [Implementation](#Implementation)
-* [Lessons Learned](#Lessons-Learned)
-* [Problems Solved](#Problems-Solved)
-* [Code Improvement and Performance](#Code-Improvement-and-Performance)
-* [Installation](#Installation)
-* [Usage](#Usage)
-* [Credits](#Credits)
-* [Helpful Articles from the Internet](#Helpful-Articles-from-the-Internet)
-* [Accessibility Tool](#Accessibility-Tool)
+
+* [What I Did](#What-I-Did) * [My Approach](#My-Approach) * [Implementation](#Implementation)
+
+* [Lessons Learned](#Lessons-Learned) * [Problems Solved](#Problems-Solved) * [Code Improvement and Performance](#Code-Improvement-and-Performance) 
+
+* [Installation](#Installation) * [Usage](#Usage)
+
+* [Credits / Shout-Outs](#Credits/Shout-Outs)
+* [Articles from the Internet](#Articles-from-the-Internet) * [Helpful Tools](#Helpful-Tools)
 * [License](#License)
 
 ### Description
@@ -48,6 +46,7 @@ I tested all the `<nav>` and `<a>` links and not all of them worked, so I change
 
 
 ## MY APPROACH:
+
 I knew I needed to clean up the `index.html` and the `style.css` sheets, but I didn't want to lose the original source code, so I copied each document and kept the SOURCE copy as a reference point. Anytime I got stuck or wanted to compare versions within my browser, I opened the code to live server. Often before comitting changes within the new `index.html` or `style.css` documents, I would use Chrome DevTools to "play in the sandbox" so to speak.
 I also used a notebook and pencil to write down possible changes so I could check them off once I attempted them in the sandbox. Once I felt good about a change, I made a change to the index.html and/or style.css file(s), and ran the commands using Bash to add, commit, and push my changes to GitHub. Using pencil and paper helped ensure that my thoughts were followed through (cheks and balances), especially since I navigated back and fourth making changes between the files.
 Lastly, I toggled between the `index.html` and the `SOURCE-index.html` in my web browser to ensure that the end result of the project followed the mockup and provided better accessibility within the web browser and on the back end for other developers.
@@ -59,6 +58,7 @@ I used a top-down approach with the `index.html` sheet and did the same with `st
 When my finished version looked and acted the way the provided mockup did, I moved on to accessibility within the documents, adding `<alt="">` descriptions for images within the `<content>` and `<benefits>` sections. *After researching on the internet I determined that the banner image used in the hero section did not require an alt image as it is decorative. An argument can be made that the icon elements used in the second column do not require alt text and could have listed alt="" with empty brackets.*
 
 ## LESSONS LEARNED:
+
 The most difficult part of the project for me was setting up the GitHub repository. Cloning the SSH from GitHub proved the be the most effective way of creating an effective remote relationship between my PC and the repository. At first I tried creating the project folder from my command line using mkdir, but accidently created the folder in the root fild/users location. The error I got from the command line prompted me to start over from within the `projects` folder from inside my `Desktop`. 
 Subsequently, I learned that deleting files from a repository is messy work and can sometimes break relationships within a diretory, so I needed to git clone my repo then practice another git push with finalized changes, including a renaming of the files I wanted to keep, and removing files fromt the directory that were extraneous such as `run-buddy.html` which was used as a reference, and a random `.md` file that was created by a few quickly typed keystrokes.
 
@@ -74,56 +74,47 @@ I wanted to clean up the appearance of the second column `<section class="benefi
 
 ## Installation
 
-Visit [@crosenfrisk on GitHub] (https://crosenfrisk.github.io/horiseon/) to download the project 'horiseon' to your local device.  
+Visit [@crosenfrisk on GitHub](https://crosenfrisk.github.io/horiseon/) to download the project 'horiseon' to your local device.  
 
 ## Usage
 
 After downloading the project from GitHub to your local device, open the `horiseon` repository in a code editor such as Visual Studio Code, then view `index.html` in your web browser or Live Server.
 
-## Credits
+## Credits / Shout-Outs
 
 Conversations with cohort members :raised_hands: Kyler McLachlan and Megan Metelak :raised_hands: guided a few of the styling choices implemented in this project.
 GitHub user profiles: @Kyler-Mclachlan
 
-### Helpful Articles from the Internet:
+### Articles from the Internet:
 
-https://developer.mozilla.org/en-US/docs/Learn/Accessibility/CSS_and_JavaScript
-https://www.w3schools.com/html/html_accessibility.asp
-https://webaim.org/articles/screenreader_testing/
-https://sc.edu/about/offices_and_divisions/digital-accessibility/guides_tutorials/alternative_text/adding-alt-text-ou-campus/banner_image_alt_text/index.php
+* [MDN: Accessiblility: CSS and JavaScript](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/CSS_and_JavaScript)
+* [W3Schools: Accessibility](https://www.w3schools.com/html/html_accessibility.asp)
+* [Testing with Screen Readers](https://webaim.org/articles/screenreader_testing/)
+* [Adding Alt Text](https://sc.edu/about/offices_and_divisions/digital-accessibility/guides_tutorials/alternative_text/adding-alt-text-ou-campus/banner_image_alt_text/index.php)
 
-Google Search:
-"what is an alt attribute in html"
+**Google Search: "what is an alt attribute in html"** provided good insight on where to use alt text -- in `<img>` elements in .html files moreso than .css files. Banners are *decorative* and can be skipped over by screen readers.
 
-### Accessibility Tool:
+### Helpful Tools:
 
-https://wordcounter.net/character-count
-Narrator application within Windows 10 
+* [Character Counter](https://wordcounter.net/character-count)
+* [Accessibility Resources](https://cccaccessibility.org/assistive-tech/screen-readers)
+* **Narrator** application within Windows 10 for PCs. 
+* **VoiceOver** application within iOS for Mac, iPhones, and iPads.
+* **TalkBack** Google's accessibility features for Android systems.
 
 
 ## License
 
-This is free and unencumbered software released into the public domain.
 
-Anyone is free to copy, modify, publish, use, compile, sell, or
-distribute this software, either in source code form or as a compiled
-binary, for any purpose, commercial or non-commercial, and by any
-means.
+##### *This is free and unencumbered software released into the public domain.*
 
-In jurisdictions that recognize copyright laws, the author or authors
-of this software dedicate any and all copyright interest in the
-software to the public domain. We make this dedication for the benefit
-of the public at large and to the detriment of our heirs and
-successors. We intend this dedication to be an overt act of
-relinquishment in perpetuity of all present and future rights to this
-software under copyright law.
+##### *Anyone is free to copy, modify, publish, use, compile, sell, or distribute this software, either in source code form or as a compiled binary, for any purpose, commercial or non-commercial, and by any means.*
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
-OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
-ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
-OTHER DEALINGS IN THE SOFTWARE.
 
-For more information, please refer to <https://unlicense.org>
+##### *In jurisdictions that recognize copyright laws, the author or authors of this software dedicate any and all copyright interest in the software to the public domain. We make this dedication for the benefit of the public at large and to the detriment of our heirs and successors. We intend this dedication to be an overt act of relinquishment in perpetuity of all present and future rights to this software under copyright law.*
+
+
+##### *THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.*
+
+
+##### *For more information, please refer to <https://unlicense.org>*
