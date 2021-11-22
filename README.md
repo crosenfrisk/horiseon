@@ -4,10 +4,17 @@
 
 * [Description](#Description)
 * [What I Did](#What-I-Did)
-* [My Approach](#MyApproach)
+* [My Approach](#My-Approach)
 * [Implementation](#Implementation)
-* [Credits](#CREDITS)
-* [License](#license)
+* [Lessons Learned](#Lessons-Learned)
+* [Problems Solved](#Problems-Solved)
+* [Code Improvement and Performance](#Code-Improvement-and-Performance)
+* [Installation](#Installation)
+* [Usage](#Usage)
+* [Credits](#Credits)
+* [Helpful Articles from the Internet](#Helpful-Articles-from-the-Internet)
+* [Accessibility Tool](#Accessibility-Tool)
+* [License](#License)
 
 ### Description
 
@@ -51,15 +58,15 @@ Lastly, I toggled between the `index.html` and the `SOURCE-index.html` in my web
 I used a top-down approach with the `index.html` sheet and did the same with `style.css`. Any time I made a change to either document I checked to see how it affected the function and appearance on the browser. Cleaning up meant adding comments, improving html semantics (putting `<h1>, <h2>, <h3>` in the correct order), and reducing redundant `style.css`.
 When my finished version looked and acted the way the provided mockup did, I moved on to accessibility within the documents, adding `<alt="">` descriptions for images within the `<content>` and `<benefits>` sections. *After researching on the internet I determined that the banner image used in the hero section did not require an alt image as it is decorative. An argument can be made that the icon elements used in the second column do not require alt text and could have listed alt="" with empty brackets.*
 
-## WHAT I LEARNED:
+## LESSONS LEARNED:
 The most difficult part of the project for me was setting up the GitHub repository. Cloning the SSH from GitHub proved the be the most effective way of creating an effective remote relationship between my PC and the repository. At first I tried creating the project folder from my command line using mkdir, but accidently created the folder in the root fild/users location. The error I got from the command line prompted me to start over from within the `projects` folder from inside my `Desktop`. 
 Subsequently, I learned that deleting files from a repository is messy work and can sometimes break relationships within a diretory, so I needed to git clone my repo then practice another git push with finalized changes, including a renaming of the files I wanted to keep, and removing files fromt the directory that were extraneous such as `run-buddy.html` which was used as a reference, and a random `.md` file that was created by a few quickly typed keystrokes.
 
-## PROBLEMS I SOLVED: 
+## PROBLEMS SOLVED: 
 
 Positioning of column two was a bit of a pain, but after I made sure that `.content {}` for column one was set to `position: relative;` `.benefits {}` were mostly accurate. I made sure to put `.benefits` AFTER `.content div {}` to allow the flow of the CSS to work properly. Stated another way, the hmtl for `<section class="content">` came before `<section class="benefits">` so I knew CSS needed to follow this model too.
   
-## HOW I IMPROVED CODE LAYOUT AND PERFORMANCE:
+## CODE IMPROVEMENT AND PERFORMANCE:
 
 My `style.css` sheet is now only 148 lines long, whereas the `source-style.css` sheet was 200.
 
@@ -78,17 +85,17 @@ After downloading the project from GitHub to your local device, open the `horise
 Conversations with cohort members :raised_hands: Kyler McLachlan and Megan Metelak :raised_hands: guided a few of the styling choices implemented in this project.
 GitHub user profiles: @Kyler-Mclachlan
 
-### Helpful articles from the internet:
+### Helpful Articles from the Internet:
 
 https://developer.mozilla.org/en-US/docs/Learn/Accessibility/CSS_and_JavaScript
 https://www.w3schools.com/html/html_accessibility.asp
 https://webaim.org/articles/screenreader_testing/
 https://sc.edu/about/offices_and_divisions/digital-accessibility/guides_tutorials/alternative_text/adding-alt-text-ou-campus/banner_image_alt_text/index.php
 
-### Google Search:
+Google Search:
 "what is an alt attribute in html"
 
-### Tools included:
+### Accessibility Tool:
 
 https://wordcounter.net/character-count
 Narrator application within Windows 10 
