@@ -10,8 +10,8 @@
 
 * [Installation](#Installation) * [Usage](#Usage)
 
-* [Credits / Shout-Outs](#Credits/Shout-Outs)
-* [Articles from the Internet](#Articles-from-the-Internet) * [Helpful Tools](#Helpful-Tools)
+* [Credits](#Credits)
+* [Articles from the Internet](#Articles-from-the-Internet) * [Accessibility Tools](#Accessibility-Tools)
 * [License](#License)
 
 ### Description
@@ -80,7 +80,7 @@ Visit [@crosenfrisk on GitHub](https://crosenfrisk.github.io/horiseon/) to downl
 
 After downloading the project from GitHub to your local device, open the `horiseon` repository in a code editor such as Visual Studio Code, then view `index.html` in your web browser or Live Server.
 
-## Credits / Shout-Outs
+## Credits
 
 Conversations with cohort members :raised_hands: Kyler McLachlan and Megan Metelak :raised_hands: guided a few of the styling choices implemented in this project.
 GitHub user profiles: @Kyler-Mclachlan
@@ -94,9 +94,9 @@ GitHub user profiles: @Kyler-Mclachlan
 
 **Google Search: "what is an alt attribute in html"** provided good insight on where to use alt text -- in `<img>` elements in .html files moreso than .css files. Banners are *decorative* and can be skipped over by screen readers.
 
-### Helpful Tools:
+### Accessibility Tools:
 
-* [Character Counter](https://wordcounter.net/character-count)
+* [Character Counter](https://wordcounter.net/character-count) to determine alt-text size, can type or copy paste. Helps to limit to 60 characters.
 * [Accessibility Resources](https://cccaccessibility.org/assistive-tech/screen-readers)
 * **Narrator** application within Windows 10 for PCs. 
 * **VoiceOver** application within iOS for Mac, iPhones, and iPads.
