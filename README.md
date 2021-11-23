@@ -83,6 +83,8 @@ I wanted to clean up the appearance of the second column `<section class="benefi
 
 If I were to talk with the client, I would ask if they like how the banner on the right side of the screen is displayed. Personally I think the spacing between elements could be improved, but I want to make sure and deliver the project to spec.
 
+*Also, I would like to modify the file in CSS to display more properly within a mobile device or tablet; currently the website formatting works best on a desktop computer. Once I know how to make this improvement [something tells me to use a viewport...] I will update the file for full functionality. (11/23/2021)*
+
 ## Installation
 
 Visit [@crosenfrisk on GitHub](https://github.com/crosenfrisk/horiseon/) to download the project 'horiseon' to your local device. Using the `<CODE CLONE>` button on GitHub, copy the SSH or HTTPS key and then use the command line prompt within **Git Bash $** git clone https://github.com/crosenfrisk/horiseon.git [and hit enter], this should save the file locally to your device.
