@@ -29,38 +29,41 @@ Our "client" Horiseon is a fictional marketing agency who has requested to have 
 
 ## WHAT I DID
 
-To help with accessibility, I first looked at the index.html file, which I quickly noticed had a lot of redundant text. Inside the body it seemed like everything was a `<div>`. Note: The original/source code can be referenced in a docuement I renamed SOURCE-index.html.
+To help with accessibility, I first looked at the `index.html file`, which I quickly noticed had a lot of redundant text. Inside the body it seemed like everything was a `<div>`. *Note: The original/source code can be referenced in a docuement I renamed `SOURCE-index.html`.*
 
 I cleaned up the `<head>` and added a proper `<title>` which tells the user of the website where they are, with "Home - Horiseon" visable in the browser tab.
 
 
 Within newly named `<header>` section, I noticed a `<span>` element within the `<h1>` element, which I removed ( `.seo {}` was also removed from the CSS) for cleaner copy. I have yet to discuss with the client what their intent was, but my concern was that any screen readers trying to introduce the `<h1>` element to their reader/user may get caught up within the styling of the word. However, if the client prefers I can revert it to the previous style using the `<span>` element to seperate out SEO from HoriSEOn. 
 
-*Edit, I returned the .seo {} to style.css, and returned the `<span>` element within `<h1>` of the `<header>` to match the mockup. This decision was made after talking with a cohort member. She made a good point about matching the brief. After testing readability using the Narrator application on my PC I felt good knowing the user would hear the proper `<h1>` introduction without any gibberish in between. Now I have a better understanding on how the `<span>` element works.*
+*Edit, I returned the .seo {} to style.css, and returned the `<span>` element within `<h1>` of the `<header>` to match the mockup. This decision was made after talking with a cohort member (Megan M.). She made a good point about matching the brief. After testing readability using the Narrator application on my PC I felt good knowing the user would hear the proper `<h1>` introduction without any gibberish in between. Now I have a better understanding on how the `<span>` element works.*
   
-To help with readability of the `index.html` file, I added Comments to delineate sections and their purpose within the document.
+To help with readability of the `index.html` file, I added `<!-- -->` comments to delineate sections and their purpose within the document.
 
 I added `<nav>` elements which seemed a better description for screen readers and backend web users than simply `<div>` within the `<header>` section.
   
-`<header>` elements were renamed within the CSS document. Since there were no class attributes for `<header>`, we did not need `.header {}`. Subsequent `.header {}` styles were renamed to `header {}.`
+`<header>` elements were renamed within the CSS document. Since there were no class attributes for `<header>`, we did not need `.header {}`. Subsequent `.header {}` styles were renamed to `header {}.` Additionally, comments were made in each section of the CSS `*/ /*` to assist with back end readability.
 
 `<div class="hero">` was renamed `<section class="hero">` and moved to its own line.
   
 After the `<header>` and `<section class="hero">`, the mockup had two clear columnns -- previously named `<div class="content">` and `<div class="benefits">`; these were changed to section class="conetnt" and `<section class="benefits">` for improved html semantics.
  
-I tested all the `<nav>` and `<a>` links and not all of them worked, so I changed `<div class="search-engine-optimization">` to `<div id="search-engine-optimization">` activating the hyperlink `<a href="#search-engine-optimization"> Search Engine Optimization</a>` within the `<nav>` section of the header.
+I tested all the `<nav>` and `<a>` links and not all of them worked, so I changed `<div class="search-engine-optimization">` to `<div id="search-engine-optimization">` activating the hyperlink `<a href="#search-engine-optimization"> Search Engine Optimization</a>` within the `<nav>` section of the `<header>`.
 
 
 ## MY APPROACH:
 
 I knew I needed to clean up the `index.html` and the `style.css` sheets, but I didn't want to lose the original source code, so I copied each document and kept the SOURCE copy as a reference point. Anytime I got stuck or wanted to compare versions within my browser, I opened the code to live server. Often before comitting changes within the new `index.html` or `style.css` documents, I would use Chrome DevTools to "play in the sandbox" so to speak.
+
 I also used a notebook and pencil to write down possible changes so I could check them off once I attempted them in the sandbox. Once I felt good about a change, I made a change to the index.html and/or style.css file(s), and ran the commands using Bash to add, commit, and push my changes to GitHub. Using pencil and paper helped ensure that my thoughts were followed through (cheks and balances), especially since I navigated back and fourth making changes between the files.
+
 Lastly, I toggled between the `index.html` and the `SOURCE-index.html` in my web browser to ensure that the end result of the project followed the mockup and provided better accessibility within the web browser and on the back end for other developers.
 
 
 ## IMPLIMENTATION:
 
 I used a top-down approach with the `index.html` sheet and did the same with `style.css`. Any time I made a change to either document I checked to see how it affected the function and appearance on the browser. Cleaning up meant adding comments, improving html semantics (putting `<h1>, <h2>, <h3>` in the correct order), and reducing redundant `style.css`.
+
 When my finished version looked and acted the way the provided mockup did, I moved on to accessibility within the documents, adding `<alt="">` descriptions for images within the `<content>` and `<benefits>` sections. *After researching on the internet I determined that the banner image used in the hero section did not require an alt image as it is decorative. An argument can be made that the icon elements used in the second column do not require alt text and could have listed alt="" with empty brackets.*
 
 ## LESSONS LEARNED:
@@ -78,9 +81,13 @@ My `style.css` sheet is now only 148 lines long, whereas the `source-style.css` 
 
 I wanted to clean up the appearance of the second column `<section class="benefits">`, so I adjusted the `padding` from `20px` to `16px` which affected the bottom margin of the content box within the `<section class="benefits">` allowing the column to align with the appearance of the `<section class="content">`.
 
+If I were to talk with the client, I would ask if they like how the banner on the right side of the screen is displayed. Personally I think the spacing between elements could be improved, but I want to make sure and deliver the project to spec.
+
+*Also, I would like to modify the file in CSS to display more properly within a mobile device or tablet; currently the website formatting works best on a desktop computer. Once I know how to make this improvement [something tells me to use a viewport...] I will update the file for full functionality. (11/23/2021)*
+
 ## Installation
 
-Visit [@crosenfrisk on GitHub](https://crosenfrisk.github.io/horiseon/) to download the project 'horiseon' to your local device.  
+Visit [@crosenfrisk on GitHub](https://github.com/crosenfrisk/horiseon/) to download the project 'horiseon' to your local device. Using the `<CODE CLONE>` button on GitHub, copy the SSH or HTTPS key and then use the command line prompt within **Git Bash $** git clone https://github.com/crosenfrisk/horiseon.git [and hit enter], this should save the file locally to your device.
 
 ## Usage
 
@@ -89,7 +96,7 @@ After downloading the project from GitHub to your local device, open the `horise
 ## Credits
 
 Conversations with cohort members :raised_hands: Kyler McLachlan and Megan Metelak :raised_hands: guided a few of the styling choices implemented in this project.
-GitHub user profiles: @Kyler-Mclachlan
+Connect with them on GitHub: @Kyler-Mclachlan, @Metelak.
 
 ### Articles from the Internet:
 
