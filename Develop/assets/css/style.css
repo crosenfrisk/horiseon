@@ -132,7 +132,7 @@ img {
 
 .benefits img {
     display: block;
-    margin: 10px auto;
+    margin: 0 auto;
     max-width: 150px;
 }
 
