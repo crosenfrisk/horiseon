@@ -20,11 +20,13 @@
 
 * [License](#License)
 
-### Description
+
+## Description
 
 This repository (Refactor Horiseon) was created for a bootcamp challenge project. The original source code came from: coding-boot-camp/urban-octo-telegram . 
 
 Our "client" Horiseon is a fictional marketing agency who has requested to have their code adjusted to meet accessiblility standards for websites and optimized for search engine performance.
+
 
 
 ## WHAT I DID
@@ -51,6 +53,7 @@ After the `<header>` and `<section class="hero">`, the mockup had two clear colu
 I tested all the `<nav>` and `<a>` links and not all of them worked, so I changed `<div class="search-engine-optimization">` to `<div id="search-engine-optimization">` activating the hyperlink `<a href="#search-engine-optimization"> Search Engine Optimization</a>` within the `<nav>` section of the `<header>`.
 
 
+
 ## MY APPROACH:
 
 I knew I needed to clean up the `index.html` and the `style.css` sheets, but I didn't want to lose the original source code, so I copied each document and kept the SOURCE copy as a reference point. Anytime I got stuck or wanted to compare versions within my browser, I opened the code to live server. Often before comitting changes within the new `index.html` or `style.css` documents, I would use Chrome DevTools to "play in the sandbox" so to speak.
@@ -60,21 +63,26 @@ I also used a notebook and pencil to write down possible changes so I could chec
 Lastly, I toggled between the `index.html` and the `SOURCE-index.html` in my web browser to ensure that the end result of the project followed the mockup and provided better accessibility within the web browser and on the back end for other developers.
 
 
+
 ## IMPLIMENTATION:
 
 I used a top-down approach with the `index.html` sheet and did the same with `style.css`. Any time I made a change to either document I checked to see how it affected the function and appearance on the browser. Cleaning up meant adding comments, improving html semantics (putting `<h1>, <h2>, <h3>` in the correct order), and reducing redundant `style.css`.
 
 When my finished version looked and acted the way the provided mockup did, I moved on to accessibility within the documents, adding `<alt="">` descriptions for images within the `<content>` and `<benefits>` sections. *After researching on the internet I determined that the banner image used in the hero section did not require an alt image as it is decorative. An argument can be made that the icon elements used in the second column do not require alt text and could have listed alt="" with empty brackets.*
 
+
 ## LESSONS LEARNED:
 
-The most difficult part of the project for me was setting up the GitHub repository. Cloning the SSH from GitHub proved the be the most effective way of creating an effective remote relationship between my PC and the repository. At first I tried creating the project folder from my command line using mkdir, but accidently created the folder in the root fild/users location. The error I got from the command line prompted me to start over from within the `projects` folder from inside my `Desktop`. 
-Subsequently, I learned that deleting files from a repository is messy work and can sometimes break relationships within a diretory, so I needed to git clone my repo then practice another git push with finalized changes, including a renaming of the files I wanted to keep, and removing files fromt the directory that were extraneous such as `run-buddy.html` which was used as a reference, and a random `.md` file that was created by a few quickly typed keystrokes.
+The most difficult part of the project for me was setting up the GitHub repository. Cloning the SSH from GitHub proved the be the most effective way of creating an effective remote relationship between my PC and the repository. At first I tried creating the project folder from my command line using mkdir, but accidently created the folder in the root fild/users location. The error I got from the command line prompted me to start over within the `projects` folder located on my `Desktop`.
+
+Subsequently, I learned that deleting files from a repository is messy work and can sometimes break relationships within a diretory, so I needed to git clone my repo then practice another git push with finalized changes, including a renaming of the files I wanted to keep, and removing files from the directory that were extraneous such as `run-buddy.html` which was used as a reference, and a random `.md` file that was created by a few quickly typed keystrokes.
+
 
 ## PROBLEMS SOLVED: 
 
-Positioning of column two was a bit of a pain, but after I made sure that `.content {}` for column one was set to `position: relative;` `.benefits {}` were mostly accurate. I made sure to put `.benefits` AFTER `.content div {}` to allow the flow of the CSS to work properly. Stated another way, the hmtl for `<section class="content">` came before `<section class="benefits">` so I knew CSS needed to follow this model too.
+Positioning of column two `<section class="benefits">` was a bit of a pain, but after I made sure that `.content {}` for column one was set to `position: relative;` `.benefits {}` were mostly accurate. I made sure to put `.benefits` AFTER `.content div {}` to allow the flow of the CSS to work properly. Stated another way, the hmtl for `<section class="content">` came before `<section class="benefits">` so I knew CSS needed to follow this model too.
   
+
 ## CODE IMPROVEMENT AND PERFORMANCE:
 
 My `style.css` sheet is now only 148 lines long, whereas the `source-style.css` sheet was 200.
@@ -85,20 +93,26 @@ If I were to talk with the client, I would ask if they like how the banner on th
 
 *Also, I would like to modify the file in CSS to display more properly within a mobile device or tablet; currently the website formatting works best on a desktop computer. Once I know how to make this improvement [something tells me to use a viewport...] I will update the file for full functionality. (11/23/2021)*
 
+
+
 ## Installation
 
 Visit [@crosenfrisk on GitHub](https://github.com/crosenfrisk/horiseon/) to download the project 'horiseon' to your local device. Using the `<CODE CLONE>` button on GitHub, copy the SSH or HTTPS key and then use the command line prompt within **Git Bash $** git clone https://github.com/crosenfrisk/horiseon.git [and hit enter], this should save the file locally to your device.
+
 
 ## Usage
 
 After downloading the project from GitHub to your local device, open the `horiseon` repository in a code editor such as Visual Studio Code, then view `index.html` in your web browser or Live Server.
 
+
 ## Credits
 
 Conversations with cohort members :raised_hands: Kyler McLachlan and Megan Metelak :raised_hands: guided a few of the styling choices implemented in this project.
+
 Connect with them on GitHub: @Kyler-Mclachlan, @Metelak.
 
-### Articles from the Internet:
+
+## Articles from the Internet:
 
 * [MDN: Accessiblility: CSS and JavaScript](https://developer.mozilla.org/en-US/docs/Learn/Accessibility/CSS_and_JavaScript)
 * [W3Schools: Accessibility](https://www.w3schools.com/html/html_accessibility.asp)
@@ -107,7 +121,8 @@ Connect with them on GitHub: @Kyler-Mclachlan, @Metelak.
 
 **Google Search: "what is an alt attribute in html"** provided good insight on where to use alt text -- in `<img>` elements in .html files moreso than .css files. Banners are *decorative* and can be skipped over by screen readers.
 
-### Accessibility Tools:
+
+## Accessibility Tools:
 
 * [Character Counter](https://wordcounter.net/character-count) to determine alt-text size, can type or copy paste. Helps to limit to 60 characters.
 * [Accessibility Resources](https://cccaccessibility.org/assistive-tech/screen-readers)
@@ -117,7 +132,6 @@ Connect with them on GitHub: @Kyler-Mclachlan, @Metelak.
 
 
 ## License
-
 
 ##### *This is free and unencumbered software released into the public domain.*
 
