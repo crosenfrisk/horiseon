@@ -3,17 +3,13 @@
 ## Table of Contents
 
 * [Description](#Description)
-* [What I Did](#What-I-Did) 
-* [My Approach](#My-Approach) 
-* [Implementation](#Implementation)
+* [What I Did](#What-I-Did) | [My Approach](#My-Approach) | [Implementation](#Implementation)
 
-* [Lessons Learned](#Lessons-Learned) 
-* [Problems Solved](#Problems-Solved) 
-* [Code Improvement and Performance](#Code-Improvement-and-Performance) 
+* [Lessons Learned](#Lessons-Learned) | [Problems Solved](#Problems-Solved) | [Code Improvement and Performance](#Code-Improvement-and-Performance) 
 
-* [Installation](#Installation) 
-* [Usage](#Usage)
-* [Credits](#Credits)
+* [View the Project](#View-the-Project)
+
+* [Installation](#Installation) | [Usage](#Usage) | [Credits](#Credits)
 
 * [Articles from the Internet](#Articles-from-the-Internet) 
 * [Accessibility Tools](#Accessibility-Tools)
@@ -93,6 +89,11 @@ If I were to talk with the client, I would ask if they like how the banner on th
 
 *Also, I would like to modify the file in CSS to display more properly within a mobile device or tablet; currently the website formatting works best on a desktop computer. Once I know how to make this improvement [something tells me to use a viewport...] I will update the file for full functionality. (11/23/2021)*
 
+
+
+## View the Project
+
+Viewable site [GitHub Pages Deployment](https://crosenfrisk.github.io/horiseon/).
 
 
 ## Installation
